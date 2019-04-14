@@ -1,0 +1,14 @@
+In Java, strings are stored as an array of 16-bit char values. Each Unicode character in the string is stored as one or (rarely) two char values in the array.
+
+If you want to store some string data in a byte array, you will need to be able to convert the string's Unicode characters into a sequence of bytes. This process is called
+encoding and there are several ways to do it, each with different rules and results. If two pieces of code want to share string data using byte arrays, they need to agree on which encoding is being used.
+
+encoding standard: UTF8
+UTF8: UTF-8 has the convenient property that if you use it to encode a string that contains only ASCII characters, every character in the input gets converted to a single byte with that character's
+      ASCII value. We might convert our Java string to a Java byte array as follows:
+         ----> byte[] bytes = s.getBytes("UTF-8");
+         ----->The byte array bytes now contains the string data from s, encoded into bytes using the UTF-8 encoding.
+
+     Now, we store or transmit the bytes somewhere, and the code on the other end wants to decode the bytes back into a Java String. It will do something like the following:
+         ---->String t = new String(bytes, "UTF-8");
+         ----->Assuming nothing went wrong, the string t now contains the same string data as the original string s.

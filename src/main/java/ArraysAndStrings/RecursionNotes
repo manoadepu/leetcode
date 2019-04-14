@@ -1,0 +1,33 @@
+What is Recursion?
+process in which a function calls itself directly or indirectly.
+
+What is base condition in recursion?
+In recursive program - the solution to base case is provided and solution of bigger problem is expressed in terms of smaller problems.
+
+Example:
+int fact(int n)
+{
+    if (n < = 1) // base case
+        return 1;
+    else
+        return n*fact(n-1);
+}
+
+In the above example:
+    Base case: n<=1 is defined and larger value of number can be solved by converting to smaller one till base case is reached.
+
+
+How a particular problem is solved using recursion?
+    The idea is represent a problem in terms of one or more smaller problems, and add one or more base conditions that stop recursion.
+For example, we compute factorial n if we know factorial of (n-1). Base case for factorial would be n = 0. We return 1 when n = 0.
+
+
+What is the difference between direct and indirect recursion?
+    A function fun is called direct recursive if it calls the same function fun. A function fun is called indirect recursive if it calls
+another function say fun_new and fun_new calls fun directly or indirectly. Difference between direct and indirect recursion has been illustrated in Table 1.
+
+
+How memory is allocated to different function calls in recursion?
+    When any function is called from main(), the memory is allocated to it on stack. A recursive function calls itself, the memory for called function
+is allocated on top of memory allocated to calling function and different copy of local variables is created for each function call. When the base
+case is reached, the function returns its value to the function by whom it is called and memory is de-allocated and the process continues.

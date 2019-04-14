@@ -1,0 +1,24 @@
+Arrays in Java:
+- An array is a group of like-typed variables that are referred to by a common name
+
+**Array can contains primitives data types as well as objects of a class depending on the definition of array. In case of primitives data
+  types, the actual values are stored in contiguous memory locations. In case of objects of a class, the actual objects are stored in heap segment.
+
+1D Array:
+   Declaration:
+        type varName[]; OR type[] varName;
+
+        Example: int[] intArray = new int[20];
+
+   Notes:
+    - Elements in array allocated by new will automatically be initialized to zero(numeric types), false(boolean), null(reference types)
+    - First, you must declare a variable of the desired array type. Second, you must allocate the memory that will hold the array.Therefore,
+      In java all arrays are dynamically allocated
+
+MultiDimensional Array:
+    Declaration:
+        int[][] intArray = new int[10][20]; //a 2D array or matrix
+        int[][][] intArray = new int[10][20][10]; //a 3D array
+
+
+resources: https://www.geeksforgeeks.org/arrays-in-java/

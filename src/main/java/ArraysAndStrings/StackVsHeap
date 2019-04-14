@@ -1,0 +1,47 @@
+What is Java Stack ?
+- Is Computer's memory where temporary variables, which are created by all functions you do, are stored.
+- It is used to execute a thread and mayh have certain short-lived values as well as references to other objects. It uses LIFO data structure.
+Explaination:
+    When a new method is invoked
+        - It creates a new block in the stack for this method that stores all the local values as well as references to other objects that
+          are being used by this method. The objects here are only accessible
+        - When the method ends, the block will be erased and will be available for use by the next method.
+        - The variables created for the method are directly stored in the memory, allowing for fast access.
+Example of how to create an object in stack:
+    void somefunction( )
+    {
+        /* create an object "m" of class Member
+        this will be put on the stack since the
+        "new" keyword is not used, and we are
+        creating the object inside a function
+        */
+
+        Member m;
+
+    } //the object "m" is destroyed once the function ends
+
+
+What is Java Heap?
+- Java objects are in heap, created when the program runs unlike where memory allocation is done in stack when program is compiled
+- Accessing variables placed in heap is a bit slower compared to a stacks direct and fast access.
+- Heap is linked to global memory pool. A method or function will use the heap for memory allocation if you need the data or variables to live longer than the method or function in question.
+- Also, there is no specific order in reserving blocks in a heap. You can allocate blocks at any time, and then you can free it when you wish. As you can imagine, it is much more complex to
+  keep track of the parts that are free and can be allocated, but it can also be divided into two generations or sub-areas.These sub-areas are called the young space (or nursery) and the old space.
+  The young space is typically earmarked for the memory allocation for new objects. When the young space becomes full, garbage collection happens. Short-lived or temporary objects typically use
+  the young space. This help makes garbage collection faster when compared to a heap without any divisions.
+Example of how to create an object in the heap:
+     void somefunction( )
+     {
+         /* create an object "m" of class Member
+           this will be put on the heap since the
+           "new" keyword is used, and we are
+           creating the object inside a function
+         */
+
+         Member* m = new Member( );
+
+         /* the object "m" must be deleted
+           otherwise a memory leak occurs
+         */
+         delete m;
+     }
