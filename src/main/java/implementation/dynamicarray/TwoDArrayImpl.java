@@ -1,4 +1,4 @@
-package ArraysAndStrings.implementation;
+package ArraysAndStrings.implementation.dynamicarray;
 
 public class TwoDArrayImpl {
     public static void main(String[] args){
