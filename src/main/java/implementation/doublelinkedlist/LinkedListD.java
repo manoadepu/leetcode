@@ -1,21 +1,23 @@
-package implementation.linkedlist;
+package implementation.doublelinkedlist;
 
-public class LinkedListU<T> {
+
+public class LinkedListD<T> {
     Node head;
 
-    public LinkedListU() {
+    public LinkedListD() {
         head =null;
     }
 
     //add an element to linked list
     public void add(Object value){
-        Node newNode = new Node(value,null);
+        Node newNode = new Node(value,null,null);
         //inserting first element
         if(head==null){
             head = newNode;
         }
         else{
             newNode.referenceToNextElement = head;
+            head.referenceToPreviousElement = newNode;
             head = newNode;
         }
     }
@@ -23,6 +25,7 @@ public class LinkedListU<T> {
     //delete an element
     public void delete(){
         head = head.referenceToNextElement;
+        head.referenceToPreviousElement = null;
     }
 
     //print all elements in the linked list

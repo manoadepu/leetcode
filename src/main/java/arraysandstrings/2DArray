@@ -1,0 +1,7 @@
+2D Array
+ - rows and columns
+
+ if(rowIndex == colIndex) => Diagonal
+ if(rowIndex > colIndex) => Lower Diagonal
+ if(rowIndex < colIndex) => UpperDiagonal
+

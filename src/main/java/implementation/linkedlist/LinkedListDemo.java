@@ -1,4 +1,4 @@
-package ArraysAndStrings.implementation.linkedlist;
+package implementation.linkedlist;
 
 public class LinkedListDemo {
 

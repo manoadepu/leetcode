@@ -1,4 +1,4 @@
-package ArraysAndStrings.implementation.dynamicarray;
+package implementation.dynamicarray;
 
 import java.util.Arrays;
 

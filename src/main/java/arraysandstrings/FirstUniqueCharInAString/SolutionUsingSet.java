@@ -1,4 +1,4 @@
-package ArraysAndStrings.FirstUniqueCharInAString;
+package arraysandstrings.FirstUniqueCharInAString;
 
         import java.util.*;
 

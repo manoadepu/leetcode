@@ -1,4 +1,4 @@
-package ArraysAndStrings.ReverseAString;
+package arraysandstrings.ReverseAString;
 
 public class SolutionUsingCharArray {
     public static void main(String[] args){

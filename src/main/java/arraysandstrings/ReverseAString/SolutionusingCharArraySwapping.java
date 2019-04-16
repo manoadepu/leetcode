@@ -1,4 +1,4 @@
-package ArraysAndStrings.ReverseAString;
+package arraysandstrings.ReverseAString;
 
 public class SolutionusingCharArraySwapping {
     public static void main(String[] args){

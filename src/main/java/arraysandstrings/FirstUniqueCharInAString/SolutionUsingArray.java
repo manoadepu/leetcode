@@ -1,4 +1,4 @@
-package ArraysAndStrings.FirstUniqueCharInAString;
+package arraysandstrings.FirstUniqueCharInAString;
 
 public class SolutionUsingArray {
     public static int firstUniqChar(String s) {

@@ -4,7 +4,7 @@
     Output: ['b','l','u','e',' ','i','s',' ','s','k','y',' ','t','h','e']
  */
 
-package ArraysAndStrings.ReverseStringWordByWord;
+package arraysandstrings.ReverseStringWordByWord;
 
 public class SolutionOne {
     static char[] outputArray;

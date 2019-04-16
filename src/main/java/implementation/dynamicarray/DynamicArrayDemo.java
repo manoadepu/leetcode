@@ -1,4 +1,4 @@
-package ArraysAndStrings.implementation.dynamicarray;
+package implementation.dynamicarray;
 
 public class DynamicArrayDemo {
     public static void main(String[] args){

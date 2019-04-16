@@ -1,4 +1,4 @@
-package ArraysAndStrings.FirstRepeatingCharInAString;
+package arraysandstrings.FirstRepeatingCharInAString;
 
 import java.util.HashSet;
 import java.util.Set;
